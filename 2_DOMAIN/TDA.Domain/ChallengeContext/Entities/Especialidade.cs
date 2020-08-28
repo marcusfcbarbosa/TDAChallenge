@@ -14,7 +14,7 @@ namespace TDA.Domain.ChallengeContext.Entities
         
         public string Descricao { get; private set; }
 
-        public List<Medico> medicos { get; set; } = new List<Medico>();
+        public List<MedicoEspecialidade> medicoEspecialidades { get; set; } = new List<MedicoEspecialidade>();
         
     }
 }

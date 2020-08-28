@@ -71,3 +71,4 @@ C:\Users\dev\TDAChallenge\1_API\TDA.WebApi\bin\Debug\netcoreapp3.0\TDA.Infra.pdb
 C:\Users\dev\TDAChallenge\1_API\TDA.WebApi\bin\Debug\netcoreapp3.0\TDA.Shared.pdb
 C:\Users\dev\TDAChallenge\1_API\TDA.WebApi\obj\Debug\netcoreapp3.0\TDA.WebApi.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\dev\TDAChallenge\1_API\TDA.WebApi\obj\Debug\netcoreapp3.0\TDA.WebApi.csproj.CopyComplete
+C:\Users\dev\TDAChallenge\1_API\TDA.WebApi\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Design.dll

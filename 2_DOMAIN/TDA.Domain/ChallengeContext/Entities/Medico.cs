@@ -5,7 +5,7 @@ namespace TDA.Domain.ChallengeContext.Entities
 {
     public class Medico : Entity
     {
-        public Medico()
+        private Medico()
         {
         }
 
@@ -17,14 +17,10 @@ namespace TDA.Domain.ChallengeContext.Entities
             Crm = crm;
         }
 
-        public void AdicionaEspecialidade(Especialidade especialidade)
-        {
-            this.especialidades.Add(especialidade);
-        }
         public string Nome { get; private set; }
         public string Cpf { get; private set; }
         public string Email { get; private set; }
         public string Crm { get; private set; }
-        public List<Especialidade> especialidades { get; set; } = new List<Especialidade>();
+        public List<MedicoEspecialidade> medicoEspecialidades { get; set; } = new List<MedicoEspecialidade>();
     }
 }

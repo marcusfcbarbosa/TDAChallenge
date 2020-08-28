@@ -30,7 +30,6 @@ namespace TDA.WebApi
             services.AddDbContext<ChallengeContext>(x => x.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
             registrandoDependencias(services);
             services.AddControllers();
-
             services.AddCors(options =>
             {
                 options.AddPolicy("CorsPolicy",
@@ -79,15 +78,24 @@ namespace TDA.WebApi
             {
                 app.UseDeveloperExceptionPage();
             }
+
+
             //app.UseHttpsRedirection();
+
             app.UseRouting();
+
             app.UseAuthorization();
+
             app.UseSwagger();
+
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "swagger");
             });
+
+
             app.UseCors("CorsPolicy");
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
