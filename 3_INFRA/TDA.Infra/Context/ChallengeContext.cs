@@ -1,4 +1,7 @@
+using FluentValidator;
 using Microsoft.EntityFrameworkCore;
+using TDA.Domain.ChallengeContext.Entities;
+using TDA.Domain.ValueObjects;
 
 namespace TDA.Infra.Context
 {
@@ -9,7 +12,8 @@ namespace TDA.Infra.Context
             : base(options)
         {
         }
-
+        public DbSet<Medico> Medicos { get; set; }
+        public DbSet<Especialidade> Especialidades { get; set; }
 
          protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
@@ -21,6 +25,10 @@ namespace TDA.Infra.Context
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(ChallengeContext).Assembly);
+            modelBuilder.Ignore<Notifiable>();
+            modelBuilder.Ignore<Notification>();
+            modelBuilder.Ignore<Email>();
+            
             base.OnModelCreating(modelBuilder);
         }
     }
