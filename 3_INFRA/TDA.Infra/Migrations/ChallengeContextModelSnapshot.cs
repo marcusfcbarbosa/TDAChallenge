@@ -51,9 +51,6 @@ namespace TDA.Infra.Migrations
                     b.Property<string>("Crm")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Email")
-                        .HasColumnType("TEXT");
-
                     b.Property<string>("Nome")
                         .HasColumnType("TEXT");
 

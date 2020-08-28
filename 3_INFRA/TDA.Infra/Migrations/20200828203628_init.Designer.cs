@@ -9,7 +9,7 @@ using TDA.Infra.Context;
 namespace TDA.Infra.Migrations
 {
     [DbContext(typeof(ChallengeContext))]
-    [Migration("20200828201848_init")]
+    [Migration("20200828203628_init")]
     partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -51,9 +51,6 @@ namespace TDA.Infra.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Crm")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Email")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Nome")

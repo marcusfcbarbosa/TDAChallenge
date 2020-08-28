@@ -32,7 +32,6 @@ namespace TDA.Infra.Migrations
                     CreatedAt = table.Column<DateTime>(nullable: false),
                     Nome = table.Column<string>(nullable: true),
                     Cpf = table.Column<string>(nullable: true),
-                    Email = table.Column<string>(nullable: true),
                     Crm = table.Column<string>(nullable: true)
                 },
                 constraints: table =>

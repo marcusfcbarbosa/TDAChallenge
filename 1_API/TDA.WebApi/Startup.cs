@@ -11,6 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using TDA.Domain.ChallengeContext.Handlers;
 using TDA.Domain.ChallengeContext.Repositories.Interfaces;
 using TDA.Infra.Context;
 using TDA.Infra.Repositorys;
@@ -39,8 +40,6 @@ namespace TDA.WebApi
             });
             DocumentacaoApi(services);
         }
-
-
         public void registrandoDependencias(IServiceCollection services)
         {
 
@@ -49,8 +48,7 @@ namespace TDA.WebApi
             #endregion
 
             #region"Handlers"
-            // services.AddScoped<MedicoHandler, MedicoHandler>();
-            // services.AddScoped<EspecialidadeHandler, EspecialidadeHandler>();
+            services.AddScoped<MedicoHandler, MedicoHandler>();
             #endregion
 
             #region"Repositórios"
@@ -60,6 +58,7 @@ namespace TDA.WebApi
             services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
             #endregion
         }
+        
         public void DocumentacaoApi(IServiceCollection services)
         {
 

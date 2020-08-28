@@ -46,11 +46,6 @@ namespace TDA.Infra.Context
                                .HasMaxLength(100)
                                .HasColumnName("Nome");
 
-                           entity.Property(e => e.Email)
-                               .IsRequired()
-                               .HasMaxLength(20).
-                               HasColumnName("Email");
-
                            entity.Property(e => e.Cpf)
                                 .IsRequired()
                                 .HasMaxLength(11).
