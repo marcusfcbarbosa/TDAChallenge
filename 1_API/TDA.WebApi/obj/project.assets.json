@@ -1690,6 +1690,49 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "TDA.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "FluentValidator": "2.0.4",
+          "TDA.Shared": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TDA.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TDA.Domain.dll": {}
+        }
+      },
+      "TDA.Infra/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "3.1.7",
+          "Microsoft.EntityFrameworkCore.Sqlite": "3.1.7",
+          "TDA.Domain": "1.0.0",
+          "TDA.Shared": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TDA.Infra.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TDA.Infra.dll": {}
+        }
+      },
+      "TDA.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "FluentValidator": "2.0.4"
+        },
+        "compile": {
+          "bin/placeholder/TDA.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TDA.Shared.dll": {}
+        }
       }
     }
   },
@@ -5674,6 +5717,21 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "TDA.Domain/1.0.0": {
+      "type": "project",
+      "path": "../../2_DOMAIN/TDA.Domain/TDA.Domain.csproj",
+      "msbuildProject": "../../2_DOMAIN/TDA.Domain/TDA.Domain.csproj"
+    },
+    "TDA.Infra/1.0.0": {
+      "type": "project",
+      "path": "../../3_INFRA/TDA.Infra/TDA.Infra.csproj",
+      "msbuildProject": "../../3_INFRA/TDA.Infra/TDA.Infra.csproj"
+    },
+    "TDA.Shared/1.0.0": {
+      "type": "project",
+      "path": "../../4_SHARED/TDA.Shared/TDA.Shared.csproj",
+      "msbuildProject": "../../4_SHARED/TDA.Shared/TDA.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5681,7 +5739,9 @@
       "FluentValidator >= 2.0.4",
       "Microsoft.EntityFrameworkCore >= 3.1.7",
       "Microsoft.EntityFrameworkCore.Sqlite >= 3.1.7",
-      "Swashbuckle.AspNetCore"
+      "Swashbuckle.AspNetCore >= 5.5.1",
+      "TDA.Domain >= 1.0.0",
+      "TDA.Infra >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5713,7 +5773,14 @@
       },
       "frameworks": {
         "netcoreapp3.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\dev\\TDAChallenge\\2_DOMAIN\\TDA.Domain\\TDA.Domain.csproj": {
+              "projectPath": "C:\\Users\\dev\\TDAChallenge\\2_DOMAIN\\TDA.Domain\\TDA.Domain.csproj"
+            },
+            "C:\\Users\\dev\\TDAChallenge\\3_INFRA\\TDA.Infra\\TDA.Infra.csproj": {
+              "projectPath": "C:\\Users\\dev\\TDAChallenge\\3_INFRA\\TDA.Infra\\TDA.Infra.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -5739,7 +5806,7 @@
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
-            "version": "(, )"
+            "version": "[5.5.1, )"
           }
         },
         "imports": [

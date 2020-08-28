@@ -37,6 +37,19 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "TDA.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "FluentValidator": "2.0.4"
+        },
+        "compile": {
+          "bin/placeholder/TDA.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TDA.Shared.dll": {}
+        }
       }
     }
   },
@@ -195,12 +208,18 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "TDA.Shared/1.0.0": {
+      "type": "project",
+      "path": "../../4_SHARED/TDA.Shared/TDA.Shared.csproj",
+      "msbuildProject": "../../4_SHARED/TDA.Shared/TDA.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "FluentValidator",
-      "NETStandard.Library >= 2.0.3"
+      "FluentValidator >= 2.0.4",
+      "NETStandard.Library >= 2.0.3",
+      "TDA.Shared >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -232,7 +251,11 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\dev\\TDAChallenge\\4_SHARED\\TDA.Shared\\TDA.Shared.csproj": {
+              "projectPath": "C:\\Users\\dev\\TDAChallenge\\4_SHARED\\TDA.Shared\\TDA.Shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -246,7 +269,7 @@
         "dependencies": {
           "FluentValidator": {
             "target": "Package",
-            "version": "(, )"
+            "version": "[2.0.4, )"
           },
           "NETStandard.Library": {
             "suppressParent": "All",

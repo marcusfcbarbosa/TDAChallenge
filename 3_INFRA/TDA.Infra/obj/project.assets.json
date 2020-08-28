@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
+      "FluentValidator/2.0.4": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.3/FluentValidator.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/FluentValidator.dll": {}
+        }
+      },
       "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
         "type": "package",
         "dependencies": {
@@ -507,10 +519,49 @@
         "runtime": {
           "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
         }
+      },
+      "TDA.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "FluentValidator": "2.0.4",
+          "TDA.Shared": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TDA.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TDA.Domain.dll": {}
+        }
+      },
+      "TDA.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "FluentValidator": "2.0.4"
+        },
+        "compile": {
+          "bin/placeholder/TDA.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TDA.Shared.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "FluentValidator/2.0.4": {
+      "sha512": "px1HWHYBD20PuCUgz/mEl/QcBsikW5nbdtR5whllwMIyJ4FJs03nGXe5ocHEre/x3CX72hJBnX7bteqkZwlcfA==",
+      "type": "package",
+      "path": "fluentvalidator/2.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fluentvalidator.2.0.4.nupkg.sha512",
+        "fluentvalidator.nuspec",
+        "lib/netstandard1.3/FluentValidator.dll"
+      ]
+    },
     "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
       "sha512": "yuvf07qFWFqtK3P/MRkEKLhn5r2UbSpVueRziSqj0yJQIKFwG1pq9mOayK3zE5qZCTs0CbrwL9M6R8VwqyGy2w==",
       "type": "package",
@@ -1445,13 +1496,25 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "TDA.Domain/1.0.0": {
+      "type": "project",
+      "path": "../../2_DOMAIN/TDA.Domain/TDA.Domain.csproj",
+      "msbuildProject": "../../2_DOMAIN/TDA.Domain/TDA.Domain.csproj"
+    },
+    "TDA.Shared/1.0.0": {
+      "type": "project",
+      "path": "../../4_SHARED/TDA.Shared/TDA.Shared.csproj",
+      "msbuildProject": "../../4_SHARED/TDA.Shared/TDA.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "Microsoft.EntityFrameworkCore >= 3.1.7",
-      "Microsoft.EntityFrameworkCore.Sqlite",
-      "NETStandard.Library >= 2.0.3"
+      "Microsoft.EntityFrameworkCore.Sqlite >= 3.1.7",
+      "NETStandard.Library >= 2.0.3",
+      "TDA.Domain >= 1.0.0",
+      "TDA.Shared >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1483,7 +1546,14 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\dev\\TDAChallenge\\2_DOMAIN\\TDA.Domain\\TDA.Domain.csproj": {
+              "projectPath": "C:\\Users\\dev\\TDAChallenge\\2_DOMAIN\\TDA.Domain\\TDA.Domain.csproj"
+            },
+            "C:\\Users\\dev\\TDAChallenge\\4_SHARED\\TDA.Shared\\TDA.Shared.csproj": {
+              "projectPath": "C:\\Users\\dev\\TDAChallenge\\4_SHARED\\TDA.Shared\\TDA.Shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -1501,7 +1571,7 @@
           },
           "Microsoft.EntityFrameworkCore.Sqlite": {
             "target": "Package",
-            "version": "(, )"
+            "version": "[3.1.7, )"
           },
           "NETStandard.Library": {
             "suppressParent": "All",

@@ -5,6 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\2_DOMAIN\TDA.Domain\TDA.Domain.csproj" />
+    <ProjectReference Include="..\..\3_INFRA\TDA.Infra\TDA.Infra.csproj" />
   </ItemGroup>
 
   <ItemGroup>

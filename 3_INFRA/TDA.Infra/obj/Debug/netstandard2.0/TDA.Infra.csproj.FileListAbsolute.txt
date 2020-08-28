@@ -6,3 +6,8 @@ C:\Users\dev\TDAChallenge\3_INFRA\TDA.Infra\obj\Debug\netstandard2.0\TDA.Infra.A
 C:\Users\dev\TDAChallenge\3_INFRA\TDA.Infra\obj\Debug\netstandard2.0\TDA.Infra.AssemblyInfo.cs
 C:\Users\dev\TDAChallenge\3_INFRA\TDA.Infra\obj\Debug\netstandard2.0\TDA.Infra.dll
 C:\Users\dev\TDAChallenge\3_INFRA\TDA.Infra\obj\Debug\netstandard2.0\TDA.Infra.pdb
+C:\Users\dev\TDAChallenge\3_INFRA\TDA.Infra\bin\Debug\netstandard2.0\TDA.Domain.dll
+C:\Users\dev\TDAChallenge\3_INFRA\TDA.Infra\bin\Debug\netstandard2.0\TDA.Shared.dll
+C:\Users\dev\TDAChallenge\3_INFRA\TDA.Infra\bin\Debug\netstandard2.0\TDA.Domain.pdb
+C:\Users\dev\TDAChallenge\3_INFRA\TDA.Infra\bin\Debug\netstandard2.0\TDA.Shared.pdb
+C:\Users\dev\TDAChallenge\3_INFRA\TDA.Infra\obj\Debug\netstandard2.0\TDA.Infra.csproj.CopyComplete
