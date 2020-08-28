@@ -24,7 +24,4 @@ namespace TDA.Infra.Context
             base.OnModelCreating(modelBuilder);
         }
     }
-        
-
-    
 }
