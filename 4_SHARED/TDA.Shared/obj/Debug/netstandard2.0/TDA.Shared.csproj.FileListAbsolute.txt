@@ -1,0 +1,8 @@
+C:\Users\dev\TDAChallenge\4_SHARED\TDA.Shared\bin\Debug\netstandard2.0\TDA.Shared.deps.json
+C:\Users\dev\TDAChallenge\4_SHARED\TDA.Shared\bin\Debug\netstandard2.0\TDA.Shared.dll
+C:\Users\dev\TDAChallenge\4_SHARED\TDA.Shared\bin\Debug\netstandard2.0\TDA.Shared.pdb
+C:\Users\dev\TDAChallenge\4_SHARED\TDA.Shared\obj\Debug\netstandard2.0\TDA.Shared.csprojAssemblyReference.cache
+C:\Users\dev\TDAChallenge\4_SHARED\TDA.Shared\obj\Debug\netstandard2.0\TDA.Shared.AssemblyInfoInputs.cache
+C:\Users\dev\TDAChallenge\4_SHARED\TDA.Shared\obj\Debug\netstandard2.0\TDA.Shared.AssemblyInfo.cs
+C:\Users\dev\TDAChallenge\4_SHARED\TDA.Shared\obj\Debug\netstandard2.0\TDA.Shared.dll
+C:\Users\dev\TDAChallenge\4_SHARED\TDA.Shared\obj\Debug\netstandard2.0\TDA.Shared.pdb

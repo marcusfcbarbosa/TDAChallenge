@@ -1,0 +1,8 @@
+C:\Users\dev\TDAChallenge\2_DOMAIN\TDA.Domain\bin\Debug\netstandard2.0\TDA.Domain.deps.json
+C:\Users\dev\TDAChallenge\2_DOMAIN\TDA.Domain\bin\Debug\netstandard2.0\TDA.Domain.dll
+C:\Users\dev\TDAChallenge\2_DOMAIN\TDA.Domain\bin\Debug\netstandard2.0\TDA.Domain.pdb
+C:\Users\dev\TDAChallenge\2_DOMAIN\TDA.Domain\obj\Debug\netstandard2.0\TDA.Domain.csprojAssemblyReference.cache
+C:\Users\dev\TDAChallenge\2_DOMAIN\TDA.Domain\obj\Debug\netstandard2.0\TDA.Domain.AssemblyInfoInputs.cache
+C:\Users\dev\TDAChallenge\2_DOMAIN\TDA.Domain\obj\Debug\netstandard2.0\TDA.Domain.AssemblyInfo.cs
+C:\Users\dev\TDAChallenge\2_DOMAIN\TDA.Domain\obj\Debug\netstandard2.0\TDA.Domain.dll
+C:\Users\dev\TDAChallenge\2_DOMAIN\TDA.Domain\obj\Debug\netstandard2.0\TDA.Domain.pdb
