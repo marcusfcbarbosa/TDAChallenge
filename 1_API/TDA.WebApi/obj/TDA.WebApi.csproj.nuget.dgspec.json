@@ -52,6 +52,10 @@
               "target": "Package",
               "version": "[2.0.4, )"
             },
+            "Microsoft.AspNetCore.Authentication": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.AspNetCore.Mvc.ApiExplorer": {
               "target": "Package",
               "version": "[2.2.0, )"

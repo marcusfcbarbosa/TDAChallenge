@@ -1,6 +1,7 @@
 using FluentValidator;
 using Microsoft.EntityFrameworkCore;
 using TDA.Domain.ChallengeContext.Entities;
+using TDA.Domain.ChallengeContext.Entities.Authentication;
 using TDA.Domain.ValueObjects;
 
 namespace TDA.Infra.Context
@@ -18,8 +19,8 @@ namespace TDA.Infra.Context
         }
         public DbSet<Medico> Medicos { get; set; }
         public DbSet<Especialidade> Especialidades { get; set; }
-
         public DbSet<MedicoEspecialidade> MedicoEspecialidades { get; set; }
+        public DbSet<User> Users { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
@@ -34,11 +35,32 @@ namespace TDA.Infra.Context
             modelBuilder.Ignore<Notifiable>();
             modelBuilder.Ignore<Notification>();
             modelBuilder.Ignore<Email>();
-
+            EntityMapping(modelBuilder);
             base.OnModelCreating(modelBuilder);
+
         }
         private void EntityMapping(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<User>(entity =>
+                       {
+                           entity.ToTable("User").HasKey(e => e.Id);
+                           entity.Property(e => e.identifyer).HasDefaultValueSql("lower(hex(randomblob(16)))");
+                           entity.Property(e => e.CreatedAt).HasColumnName("CreatedAt");
+
+                           entity.Property(e => e.UserName)
+                               .HasMaxLength(100)
+                               .HasColumnName("Nome");
+
+                           entity.Property(e => e.PassWord)
+                                .HasMaxLength(100)
+                                .HasColumnName("PassWord");
+
+                           entity.Property(e => e.Role)
+                                .HasMaxLength(100)
+                                .HasColumnName("Role");
+
+                       });
+
             modelBuilder.Entity<Medico>(entity =>
                        {
                            entity.ToTable("Medico").HasKey(e => e.Id);

@@ -10,7 +10,7 @@ namespace TDA.Shared.Entities
         {
             this.CreatedAt = DateTime.Now;
         }
-        public int Id { get; set; }
+        public long Id { get; set; }
         public string identifyer { get; set; }
         public DateTime CreatedAt { get; set; }
     }

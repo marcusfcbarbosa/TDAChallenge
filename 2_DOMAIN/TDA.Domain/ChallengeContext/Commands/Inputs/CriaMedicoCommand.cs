@@ -20,7 +20,6 @@ namespace TDA.Domain.ChallengeContext.Commands.Inputs
                  .IsNotNull(cpf, "cpf", "cpf é obrigatório")
                  .IsNotNull(crm, "crm", "crm é obrigatório")
                 .IsLowerOrEqualsThan(especialidades.Count(), 0, "especialidades", "Informe a especialidade")
-
              );
         }
 

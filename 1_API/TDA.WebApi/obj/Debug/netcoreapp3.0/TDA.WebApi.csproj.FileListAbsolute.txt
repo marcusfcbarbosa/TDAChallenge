@@ -77,3 +77,5 @@ C:\Users\dev\TDAChallenge\1_API\TDA.WebApi\bin\Debug\netcoreapp3.0\Microsoft.Asp
 C:\Users\dev\TDAChallenge\1_API\TDA.WebApi\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
 C:\Users\dev\TDAChallenge\1_API\TDA.WebApi\bin\Debug\netcoreapp3.0\Newtonsoft.Json.Bson.dll
 C:\Users\dev\TDAChallenge\1_API\TDA.WebApi\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.Newtonsoft.dll
+C:\Users\dev\TDAChallenge\1_API\TDA.WebApi\bin\Debug\netcoreapp3.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\dev\TDAChallenge\1_API\TDA.WebApi\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.1\System.Security.Cryptography.Pkcs.dll
