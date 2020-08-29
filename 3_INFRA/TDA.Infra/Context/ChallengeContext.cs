@@ -8,7 +8,10 @@ namespace TDA.Infra.Context
     public class ChallengeContext : DbContext
     {
 
-        public ChallengeContext() { }
+        public ChallengeContext()
+        {
+            this.ChangeTracker.LazyLoadingEnabled = false;
+        }
         public ChallengeContext(DbContextOptions<ChallengeContext> options)
             : base(options)
         {
@@ -68,6 +71,7 @@ namespace TDA.Infra.Context
                        .HasColumnName("Descricao");
                });
 
+            //existe uma forma de nao mapear entidades associativas (mas não encontrei, pesquiso depois)
             modelBuilder.Entity<MedicoEspecialidade>(entity =>
             {
                 entity.ToTable("MedicoEspecialidade").HasKey(me => new { me.medicoId, me.especialidadeId });

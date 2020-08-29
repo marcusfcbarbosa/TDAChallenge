@@ -11,6 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.OpenApi.Models;
 using TDA.Domain.ChallengeContext.Handlers;
 using TDA.Domain.ChallengeContext.Repositories.Interfaces;
 using TDA.Infra.Context;
@@ -58,14 +59,13 @@ namespace TDA.WebApi
             services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
             #endregion
         }
-        
+
         public void DocumentacaoApi(IServiceCollection services)
         {
-
             services.AddSwaggerGen(options =>
             {
                 options.DescribeAllParametersInCamelCase();
-                options.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "Docs", Version = "v1" });
+                options.SwaggerDoc("v1", new OpenApiInfo { Title = "Docs", Version = "v1" });
 
             });
             services.AddSwaggerDocumentation();
