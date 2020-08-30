@@ -1,5 +1,6 @@
 using System;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using TDA.Domain.ChallengeContext.Adapter;
@@ -23,7 +24,8 @@ namespace TDA.WebApi.Controllers
             _medicoHandler = medicoHandler;
         }
 
-        [HttpPost("user")]
+        [HttpPost("createUser")]
+        [AllowAnonymous]
         public ICommandResult PostUser([FromBody] CriaUserCommand command)
         {
             try

@@ -6,3 +6,4 @@ C:\Users\dev\TDAChallenge\4_SHARED\TDA.Shared\obj\Debug\netstandard2.0\TDA.Share
 C:\Users\dev\TDAChallenge\4_SHARED\TDA.Shared\obj\Debug\netstandard2.0\TDA.Shared.AssemblyInfo.cs
 C:\Users\dev\TDAChallenge\4_SHARED\TDA.Shared\obj\Debug\netstandard2.0\TDA.Shared.dll
 C:\Users\dev\TDAChallenge\4_SHARED\TDA.Shared\obj\Debug\netstandard2.0\TDA.Shared.pdb
+C:\Users\dev\TDAChallenge\4_SHARED\TDA.Shared\obj\Debug\netstandard2.0\TDA.Shared.csproj.CoreCompileInputs.cache

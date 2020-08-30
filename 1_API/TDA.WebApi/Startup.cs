@@ -1,7 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -11,6 +13,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using TDA.Domain.ChallengeContext.Handlers;
 using TDA.Domain.ChallengeContext.Repositories.Interfaces;
@@ -31,7 +34,7 @@ namespace TDA.WebApi
         {
             services.AddDbContext<ChallengeContext>(x => x.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
             registrandoDependencias(services);
-            services.AddControllers();
+
             services.AddCors(options =>
             {
                 options.AddPolicy("CorsPolicy",
@@ -39,6 +42,27 @@ namespace TDA.WebApi
                         .AllowAnyMethod()
                         .AllowAnyHeader());
             });
+            services.AddControllers();
+
+            //Configurações do TOKEN
+            var key = Encoding.ASCII.GetBytes(Settings.Secret);
+            services.AddAuthentication(x =>
+            {
+                x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).AddJwtBearer(x =>
+                    {
+                        x.RequireHttpsMetadata = false;
+                        x.SaveToken = true;
+                        x.TokenValidationParameters = new TokenValidationParameters
+                        {
+                            ValidateIssuerSigningKey = true,
+                            IssuerSigningKey = new SymmetricSecurityKey(key),
+                            ValidateIssuer = false,
+                            ValidateAudience = false
+                        };
+                    });
+            ;
             DocumentacaoApi(services);
         }
         public void registrandoDependencias(IServiceCollection services)
@@ -84,6 +108,12 @@ namespace TDA.WebApi
 
             app.UseRouting();
 
+            app.UseCors(x => x
+                .AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader());
+
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseSwagger();

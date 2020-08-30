@@ -11,3 +11,4 @@ C:\Users\dev\TDAChallenge\3_INFRA\TDA.Infra\bin\Debug\netstandard2.0\TDA.Shared.
 C:\Users\dev\TDAChallenge\3_INFRA\TDA.Infra\bin\Debug\netstandard2.0\TDA.Domain.pdb
 C:\Users\dev\TDAChallenge\3_INFRA\TDA.Infra\bin\Debug\netstandard2.0\TDA.Shared.pdb
 C:\Users\dev\TDAChallenge\3_INFRA\TDA.Infra\obj\Debug\netstandard2.0\TDA.Infra.csproj.CopyComplete
+C:\Users\dev\TDAChallenge\3_INFRA\TDA.Infra\obj\Debug\netstandard2.0\TDA.Infra.csproj.CoreCompileInputs.cache

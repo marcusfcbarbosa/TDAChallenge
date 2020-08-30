@@ -9,3 +9,4 @@ C:\Users\dev\TDAChallenge\2_DOMAIN\TDA.Domain\obj\Debug\netstandard2.0\TDA.Domai
 C:\Users\dev\TDAChallenge\2_DOMAIN\TDA.Domain\bin\Debug\netstandard2.0\TDA.Shared.dll
 C:\Users\dev\TDAChallenge\2_DOMAIN\TDA.Domain\bin\Debug\netstandard2.0\TDA.Shared.pdb
 C:\Users\dev\TDAChallenge\2_DOMAIN\TDA.Domain\obj\Debug\netstandard2.0\TDA.Domain.csproj.CopyComplete
+C:\Users\dev\TDAChallenge\2_DOMAIN\TDA.Domain\obj\Debug\netstandard2.0\TDA.Domain.csproj.CoreCompileInputs.cache

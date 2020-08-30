@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "CqrHqEhG+AZEJ9FT1iOxAN9LzxqMOod3u6/X5Q2Qx8aeEEvO1v7m1PfmrsdJl6vUeCHy+gffF6qN71D9vSw7MQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\dev\\TDAChallenge\\4_SHARED\\TDA.Shared\\TDA.Shared.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Marcus\\.nuget\\packages\\fluentvalidator\\2.0.4\\fluentvalidator.2.0.4.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
