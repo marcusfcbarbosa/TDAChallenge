@@ -23,6 +23,20 @@ namespace TDA.WebApi.Controllers
             _medicoHandler = medicoHandler;
         }
 
+        [HttpPost("user")]
+        public ICommandResult PostUser([FromBody] CriaUserCommand command)
+        {
+            try
+            {
+                return _medicoHandler.Handle(command);
+            }
+            catch (Exception ex)
+            {
+                return new CommandResult(false, ex.Message, StatusCodes.Status500InternalServerError);
+            }
+        }
+
+        //precisa autentica
         [HttpPost("")]
         public ICommandResult Post([FromBody] CriaMedicoCommand command)
         {
@@ -36,6 +50,7 @@ namespace TDA.WebApi.Controllers
             }
         }
 
+        //precisa autentica
         [HttpGet("")]
         public async Task<ICommandResult> Get()
         {

@@ -53,6 +53,7 @@ namespace TDA.WebApi
             #endregion
 
             #region"Repositórios"
+            services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IMedicoRepository, MedicoRepository>();
             services.AddScoped<IEspecialidadeRepository, EspecialidadeRepository>();
 
