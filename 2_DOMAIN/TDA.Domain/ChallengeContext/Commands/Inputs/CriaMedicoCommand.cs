@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using FluentValidator;
 using FluentValidator.Validation;
+using TDA.Domain.Utils;
 using TDA.Shared.Commands;
 
 namespace TDA.Domain.ChallengeContext.Commands.Inputs
@@ -19,9 +20,9 @@ namespace TDA.Domain.ChallengeContext.Commands.Inputs
                  .IsNotNull(nome, "Nome", "Nome é obrigatório")
                  .IsNotNull(cpf, "cpf", "cpf é obrigatório")
                  .IsNotNull(crm, "crm", "crm é obrigatório")
+                 .IsFalse(Util.ValidaCpf(cpf), "cpf", "cpf inválido")
                 .IsLowerOrEqualsThan(especialidades.Count(), 0, "especialidades", "Informe a especialidade")
              );
         }
-
     }
 }

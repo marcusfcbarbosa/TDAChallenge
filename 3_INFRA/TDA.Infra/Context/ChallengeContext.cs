@@ -37,7 +37,6 @@ namespace TDA.Infra.Context
             modelBuilder.Ignore<Email>();
             EntityMapping(modelBuilder);
             base.OnModelCreating(modelBuilder);
-
         }
         private void EntityMapping(ModelBuilder modelBuilder)
         {
