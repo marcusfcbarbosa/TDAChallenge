@@ -1,6 +1,8 @@
 using FluentValidator;
+using TDA.Domain.ChallengeContext.Adapter;
 using TDA.Domain.ChallengeContext.Commands.Inputs;
 using TDA.Domain.ChallengeContext.Commands.Outputs;
+using TDA.Domain.ChallengeContext.Entities.Authentication;
 using TDA.Domain.ChallengeContext.Repositories.Interfaces;
 using TDA.Shared.Commands;
 
@@ -41,7 +43,10 @@ namespace TDA.Domain.ChallengeContext.Handlers
             {
                 return new CommandResult(false, "Campos enviados com erro", command.Notifications);
             }
-            throw new System.NotImplementedException();
+            var user = new User(command.UserName,command.PassWord,command.Role);
+            _userRepository.Create(user);
+            _userRepository.SaveChanges();
+            return new CommandResult(true, "Usuario Criado com sucesso!", UserAdapter.DomainToViewModel(user));
         }
 
         public ICommandResult Handle(CriaEspecialidadeCommand command)

@@ -1,5 +1,6 @@
 using FluentValidator;
 using TDA.Domain.ChallengeContext.Commands.Inputs.Authentication;
+using TDA.Domain.ChallengeContext.Commands.Outputs;
 using TDA.Domain.ChallengeContext.Repositories.Interfaces;
 using TDA.Shared.Commands;
 
@@ -16,6 +17,11 @@ namespace TDA.Domain.ChallengeContext.Handlers.Authentication
 
         public ICommandResult Handle(AuthenticationCommand command)
         {
+            command.Validate();
+            if (!command.Valid)
+            {
+                return new CommandResult(false, "Campos enviados com erro", command.Notifications);
+            }
             throw new System.NotImplementedException();
         }
     }
