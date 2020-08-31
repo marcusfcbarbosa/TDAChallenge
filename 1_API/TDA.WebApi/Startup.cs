@@ -39,7 +39,7 @@ namespace TDA.WebApi
             registrandoDependencias(services);
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
-
+            DocumentacaoApi(services);
             var key = Encoding.ASCII.GetBytes(Settings.Secret);
             services.AddAuthentication(x =>
             {
@@ -59,7 +59,7 @@ namespace TDA.WebApi
                 };
             });
 
-            DocumentacaoApi(services);
+            
 
         }
         public void registrandoDependencias(IServiceCollection services)
@@ -84,12 +84,12 @@ namespace TDA.WebApi
 
         public void DocumentacaoApi(IServiceCollection services)
         {
-            services.AddSwaggerGen(options =>
-            {
-                options.DescribeAllParametersInCamelCase();
-                options.SwaggerDoc("v1", new OpenApiInfo { Title = "Docs", Version = "v1" });
+            // services.AddSwaggerGen(options =>
+            // {
+            //     options.DescribeAllParametersInCamelCase();
+            //     options.SwaggerDoc("v1", new OpenApiInfo { Title = "Docs", Version = "v1" });
 
-            });
+            // });
             services.AddSwaggerDocumentation();
 
         }

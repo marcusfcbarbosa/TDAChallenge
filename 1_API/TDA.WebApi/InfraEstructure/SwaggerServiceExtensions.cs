@@ -18,13 +18,31 @@ namespace TDA.WebApi.InfraEstructure
             {
                 c.SwaggerDoc("v1.0", new OpenApiInfo { Title = "TDA API v1.0", Version = "v1.0" });
 
-                c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+               c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
                 {
-                    Description = "JWT Authorization header using the Bearer scheme. Example: \"Authorization: Bearer {token}\"",
                     Name = "Authorization",
+                    Type = SecuritySchemeType.ApiKey,
+                    Scheme = "Bearer",
+                    BearerFormat = "JWT",
                     In = ParameterLocation.Header,
-                    Type = SecuritySchemeType.ApiKey
+                    Description = "JWT Authorization header using the Bearer scheme."
                 });
+                c.AddSecurityRequirement(new OpenApiSecurityRequirement
+                {
+                    {
+                          new OpenApiSecurityScheme
+                            {
+                                Reference = new OpenApiReference 
+                                { 
+                                    Type = ReferenceType.SecurityScheme, 
+                                    Id = "Bearer" 
+                                }
+                            },
+                            new string[] {}
+ 
+                    }
+                });
+
             });
 
             services.AddAuthorization(c =>
@@ -33,7 +51,7 @@ namespace TDA.WebApi.InfraEstructure
                 .RequireAuthenticatedUser()
                 .Build();
             });
-            
+
             return services;
         }
         public static IApplicationBuilder UseSwaggerDocumentation(this IApplicationBuilder app)
@@ -46,7 +64,6 @@ namespace TDA.WebApi.InfraEstructure
                 c.DocumentTitle = "Title Documentation";
                 c.DocExpansion(DocExpansion.None);
             });
-
             return app;
         }
 
