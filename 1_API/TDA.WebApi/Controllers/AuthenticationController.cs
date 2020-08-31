@@ -36,7 +36,11 @@ namespace TDA.WebApi.Controllers
                 if (user != null)
                 {
                     var token = TokenService.GenerateToken(user);
-                    return new CommandResult(true, "", token);
+                    return new CommandResult(true, "", new
+                    {
+                        user = user,
+                        token = token
+                    });
                 }
                 else
                 {

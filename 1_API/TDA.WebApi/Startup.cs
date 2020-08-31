@@ -102,17 +102,9 @@ namespace TDA.WebApi
             {
                 app.UseDeveloperExceptionPage();
             }
-
-
             //app.UseHttpsRedirection();
-
             app.UseRouting();
-
-            app.UseCors(x => x
-                .AllowAnyOrigin()
-                .AllowAnyMethod()
-                .AllowAnyHeader());
-
+          
             app.UseAuthentication();
             app.UseAuthorization();
 

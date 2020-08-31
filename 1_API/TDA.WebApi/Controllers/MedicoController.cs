@@ -14,7 +14,8 @@ namespace TDA.WebApi.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class MedicoController
+    [Authorize]
+    public class MedicoController : ControllerBase
     {
         private readonly MedicoHandler _medicoHandler;
         private readonly IMedicoRepository _medicoRepository;
@@ -54,6 +55,7 @@ namespace TDA.WebApi.Controllers
 
         //precisa autentica
         [HttpGet("")]
+        [Authorize]
         public async Task<ICommandResult> Get()
         {
             try
