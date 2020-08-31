@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using TDA.Domain.ChallengeContext.Adapter;
 using TDA.Domain.ChallengeContext.Commands.Inputs.Authentication;
 using TDA.Domain.ChallengeContext.Commands.Outputs;
 using TDA.Domain.ChallengeContext.Repositories.Interfaces;
@@ -38,7 +39,7 @@ namespace TDA.WebApi.Controllers
                     var token = TokenService.GenerateToken(user);
                     return new CommandResult(true, "", new
                     {
-                        user = user,
+                        user = UserAdapter.DomainToViewModel(user),
                         token = token
                     });
                 }

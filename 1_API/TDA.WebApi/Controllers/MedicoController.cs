@@ -14,7 +14,6 @@ namespace TDA.WebApi.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    [Authorize]
     public class MedicoController : ControllerBase
     {
         private readonly MedicoHandler _medicoHandler;
@@ -39,8 +38,9 @@ namespace TDA.WebApi.Controllers
             }
         }
 
-        //precisa autentica
+        
         [HttpPost("")]
+        [Authorize]
         public ICommandResult Post([FromBody] CriaMedicoCommand command)
         {
             try

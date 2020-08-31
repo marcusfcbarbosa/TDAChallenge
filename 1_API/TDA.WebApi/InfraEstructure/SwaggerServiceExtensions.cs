@@ -15,18 +15,6 @@ namespace TDA.WebApi.InfraEstructure
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1.0", new OpenApiInfo { Title = "TDA API v1.0", Version = "v1.0" });
-                c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
-                {
-                    Name = "Bearer",
-                    BearerFormat = "JWT",
-                    Scheme = "bearer",
-                    Description = "Specify the authorization token.",
-                    In = ParameterLocation.Header,
-                    Type = SecuritySchemeType.Http,
-                });
-                var securityRequirement = new OpenApiSecurityRequirement();
-            c.AddSecurityRequirement(securityRequirement);
-
             });
             return services;
         }
