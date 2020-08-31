@@ -22,5 +22,10 @@ namespace TDA.Infra.Repositorys
             Include(me => me.medicoEspecialidades);
             return await query.ToListAsync();
         }
+
+        public Task<IEnumerable<Medico>> ListaMedicosDapper()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

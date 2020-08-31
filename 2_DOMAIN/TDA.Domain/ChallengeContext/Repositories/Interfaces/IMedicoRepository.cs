@@ -8,5 +8,7 @@ namespace TDA.Domain.ChallengeContext.Repositories.Interfaces
     {
         Task<IEnumerable<Medico>> ListaMedicos();
 
+        Task<IEnumerable<Medico>> ListaMedicosDapper();
+
     }
 }
