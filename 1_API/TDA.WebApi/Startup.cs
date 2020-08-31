@@ -32,9 +32,12 @@ namespace TDA.WebApi
         public IConfiguration Configuration { get; }
         public void ConfigureServices(IServiceCollection services)
         {
+
+            services.AddCors();
+
             services.AddDbContext<ChallengeContext>(x => x.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
             registrandoDependencias(services);
-            services.AddCors();
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
 
             var key = Encoding.ASCII.GetBytes(Settings.Secret);
@@ -55,6 +58,7 @@ namespace TDA.WebApi
                     ValidateAudience = false
                 };
             });
+
             DocumentacaoApi(services);
 
         }
@@ -96,6 +100,13 @@ namespace TDA.WebApi
                 app.UseSwaggerDocumentation();
             }
             //app.UseHttpsRedirection();
+            app.UseSwagger();
+
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "swagger");
+            });
+
             app.UseRouting();
 
             app.UseCors(x => x
@@ -106,14 +117,6 @@ namespace TDA.WebApi
             app.UseAuthentication();
             app.UseAuthorization();
 
-            app.UseSwagger();
-
-            app.UseSwaggerUI(c =>
-            {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "swagger");
-            });
-
-            
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

@@ -80,7 +80,7 @@
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[5.5.1, )"
+              "version": "[5.0.0-rc4, )"
             },
             "Swashbuckle.AspNetCore.Newtonsoft": {
               "target": "Package",
