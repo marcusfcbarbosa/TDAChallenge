@@ -77,6 +77,8 @@ namespace TDA.WebApi
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IMedicoRepository, MedicoRepository>();
             services.AddScoped<IEspecialidadeRepository, EspecialidadeRepository>();
+            services.AddScoped<IMedicoEspecialidadeRespository, MedicoEspecialidadeRespository>();
+           
 
             services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
             #endregion
@@ -84,14 +86,7 @@ namespace TDA.WebApi
 
         public void DocumentacaoApi(IServiceCollection services)
         {
-            // services.AddSwaggerGen(options =>
-            // {
-            //     options.DescribeAllParametersInCamelCase();
-            //     options.SwaggerDoc("v1", new OpenApiInfo { Title = "Docs", Version = "v1" });
-
-            // });
             services.AddSwaggerDocumentation();
-
         }
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {

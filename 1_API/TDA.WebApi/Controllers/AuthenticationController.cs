@@ -40,7 +40,7 @@ namespace TDA.WebApi.Controllers
                     return new CommandResult(true, "", new
                     {
                         user = UserAdapter.DomainToViewModel(user),
-                        token = token
+                        token = "Bearer "+ token
                     });
                 }
                 else

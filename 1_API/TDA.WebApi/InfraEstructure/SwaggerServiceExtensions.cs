@@ -11,7 +11,6 @@ namespace TDA.WebApi.InfraEstructure
 {
     public static class SwaggerServiceExtensions
     {
-
         public static IServiceCollection AddSwaggerDocumentation(this IServiceCollection services)
         {
             services.AddSwaggerGen(c =>
@@ -27,6 +26,7 @@ namespace TDA.WebApi.InfraEstructure
                     In = ParameterLocation.Header,
                     Description = "JWT Authorization header using the Bearer scheme."
                 });
+                
                 c.AddSecurityRequirement(new OpenApiSecurityRequirement
                 {
                     {
@@ -39,10 +39,8 @@ namespace TDA.WebApi.InfraEstructure
                                 }
                             },
                             new string[] {}
- 
                     }
                 });
-
             });
 
             services.AddAuthorization(c =>
@@ -66,6 +64,5 @@ namespace TDA.WebApi.InfraEstructure
             });
             return app;
         }
-
     }
 }

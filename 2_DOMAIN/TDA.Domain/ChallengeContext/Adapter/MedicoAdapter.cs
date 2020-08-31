@@ -22,7 +22,6 @@ namespace TDA.Domain.ChallengeContext.Adapter
 
         public static IEnumerable<MedicoViewModel> DomainToViewModel(IEnumerable<Medico> medicos)
         {
-
             List<MedicoViewModel> list = new List<MedicoViewModel>();
             for (int i = 0; i < medicos.Count(); i++)
             {
