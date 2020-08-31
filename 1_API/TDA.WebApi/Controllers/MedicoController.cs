@@ -53,7 +53,6 @@ namespace TDA.WebApi.Controllers
             }
         }
 
-        //precisa autentica
         [HttpGet("")]
         [Authorize]
         public async Task<ICommandResult> Get()

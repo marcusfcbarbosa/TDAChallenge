@@ -8,9 +8,11 @@
     ".NETCoreApp,Version=v3.0": {
       "TDA.Test/1.0.0": {
         "dependencies": {
+          "FluentValidator": "2.0.4",
           "MSTest.TestAdapter": "1.4.0",
           "MSTest.TestFramework": "1.4.0",
           "Microsoft.NET.Test.Sdk": "16.2.0",
+          "TDA.Domain": "1.0.0",
           "coverlet.collector": "1.0.1"
         },
         "runtime": {
@@ -18,6 +20,17 @@
         }
       },
       "coverlet.collector/1.0.1": {},
+      "FluentValidator/2.0.4": {
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "runtime": {
+          "lib/netstandard1.3/FluentValidator.dll": {
+            "assemblyVersion": "2.0.4.0",
+            "fileVersion": "2.0.4.0"
+          }
+        }
+      },
       "Microsoft.CodeCoverage/16.2.0": {
         "runtime": {
           "lib/netcoreapp1.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {
@@ -1323,6 +1336,23 @@
             "fileVersion": "1.0.24212.1"
           }
         }
+      },
+      "TDA.Domain/1.0.0": {
+        "dependencies": {
+          "FluentValidator": "2.0.4",
+          "TDA.Shared": "1.0.0"
+        },
+        "runtime": {
+          "TDA.Domain.dll": {}
+        }
+      },
+      "TDA.Shared/1.0.0": {
+        "dependencies": {
+          "FluentValidator": "2.0.4"
+        },
+        "runtime": {
+          "TDA.Shared.dll": {}
+        }
       }
     }
   },
@@ -1338,6 +1368,13 @@
       "sha512": "sha512-RAuno8s7DBGo2IdV/1d8YSnXMd/728K3PBT5R6/kfGx1yunBZmavlaFQfhGe7Q7N2nUMkvVET+7ITn3+KSg+Uw==",
       "path": "coverlet.collector/1.0.1",
       "hashPath": "coverlet.collector.1.0.1.nupkg.sha512"
+    },
+    "FluentValidator/2.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-px1HWHYBD20PuCUgz/mEl/QcBsikW5nbdtR5whllwMIyJ4FJs03nGXe5ocHEre/x3CX72hJBnX7bteqkZwlcfA==",
+      "path": "fluentvalidator/2.0.4",
+      "hashPath": "fluentvalidator.2.0.4.nupkg.sha512"
     },
     "Microsoft.CodeCoverage/16.2.0": {
       "type": "package",
@@ -2066,6 +2103,16 @@
       "sha512": "sha512-Zm2BdeanuncYs3NhCj4c9e1x3EXFzFBVv2wPEc/Dj4ZbI9R8ecLSR5frAsx4zJCPBtKQreQ7Q/KxJEohJZbfzA==",
       "path": "system.xml.xpath.xmldocument/4.0.1",
       "hashPath": "system.xml.xpath.xmldocument.4.0.1.nupkg.sha512"
+    },
+    "TDA.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TDA.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

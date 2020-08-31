@@ -9,6 +9,13 @@ namespace TDA.Domain.ChallengeContext.Commands.Inputs
 {
     public class CriaMedicoCommand : Notifiable, ICommand
     {
+        public CriaMedicoCommand(string nome, string cpf, string crm)
+        {
+            this.nome = nome;
+            this.cpf = cpf;
+            this.crm = crm;
+        }
+
         public string nome { get; set; }
         public string cpf { get; set; }
         public string crm { get; set; }

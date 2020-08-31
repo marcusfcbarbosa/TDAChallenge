@@ -90,3 +90,10 @@ C:\Users\dev\TDAChallenge\5_TEST\TDA.Test\obj\Debug\netcoreapp3.0\TDA.Test.Assem
 C:\Users\dev\TDAChallenge\5_TEST\TDA.Test\obj\Debug\netcoreapp3.0\TDA.Test.csproj.CopyComplete
 C:\Users\dev\TDAChallenge\5_TEST\TDA.Test\obj\Debug\netcoreapp3.0\TDA.Test.dll
 C:\Users\dev\TDAChallenge\5_TEST\TDA.Test\obj\Debug\netcoreapp3.0\TDA.Test.pdb
+C:\Users\dev\TDAChallenge\5_TEST\TDA.Test\bin\Debug\netcoreapp3.0\FluentValidator.dll
+C:\Users\dev\TDAChallenge\5_TEST\TDA.Test\bin\Debug\netcoreapp3.0\TDA.Domain.dll
+C:\Users\dev\TDAChallenge\5_TEST\TDA.Test\bin\Debug\netcoreapp3.0\TDA.Shared.dll
+C:\Users\dev\TDAChallenge\5_TEST\TDA.Test\bin\Debug\netcoreapp3.0\TDA.Domain.pdb
+C:\Users\dev\TDAChallenge\5_TEST\TDA.Test\bin\Debug\netcoreapp3.0\TDA.Shared.pdb
+C:\Users\dev\TDAChallenge\5_TEST\TDA.Test\obj\Debug\netcoreapp3.0\TDA.Test.csproj.CoreCompileInputs.cache
+C:\Users\dev\TDAChallenge\5_TEST\TDA.Test\obj\Debug\netcoreapp3.0\TDA.Test.genruntimeconfig.cache

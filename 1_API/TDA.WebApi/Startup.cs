@@ -58,9 +58,6 @@ namespace TDA.WebApi
                     ValidateAudience = false
                 };
             });
-
-            
-
         }
         public void registrandoDependencias(IServiceCollection services)
         {

@@ -64,7 +64,5 @@ namespace TDA.Domain.ChallengeContext.Adapter
             }
             return list;
         }
-
-
     }
 }
