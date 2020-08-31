@@ -8,7 +8,7 @@ namespace TDA.Domain.ChallengeContext.DTOs
         public string Nome { get; set; }
         public string Cpf { get; set; }
         public string Crm { get; set; }
-        ICollection<EspecialidadeDTO> Especialidades { get; set; } = new HashSet<EspecialidadeDTO>();
+        public ICollection<EspecialidadeDTO> Especialidades { get; set; } = new HashSet<EspecialidadeDTO>();
 
     }
 }

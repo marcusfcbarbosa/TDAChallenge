@@ -19,13 +19,11 @@ namespace TDA.Infra.Repositorys
         public async Task<IEnumerable<Medico>> ListaMedicos()
         {
             IQueryable<Medico> query = _context.Medicos.
-            Include(me => me.medicoEspecialidades);
+            Include(me => me.medicoEspecialidades)
+            .ThenInclude(e => e.especialidade);
             return await query.ToListAsync();
         }
 
-        public Task<IEnumerable<Medico>> ListaMedicosDapper()
-        {
-            throw new System.NotImplementedException();
-        }
+
     }
 }

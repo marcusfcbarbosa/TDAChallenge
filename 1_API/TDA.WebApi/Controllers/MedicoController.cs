@@ -60,8 +60,8 @@ namespace TDA.WebApi.Controllers
         {
             try
             {
-                var clientes = MedicoAdapter.DomainToViewModel(await _medicoRepository.ListaMedicos());
-                return new CommandResult(true, "", clientes);
+                var medicos = MedicoAdapter.DomainToViewModel(await _medicoRepository.ListaMedicos());
+                return new CommandResult(true, "", medicos);
             }
             catch (Exception ex)
             {

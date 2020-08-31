@@ -12,9 +12,9 @@ namespace TDA.Domain.ChallengeContext.Entities
         }
 
         public long medicoId { get; private set; }
-        public Medico medico { get; private set; }
+        public virtual Medico medico { get; private set; }
         public long especialidadeId { get; private set; }
-        public Especialidade especialidade { get; private set; }
+        public virtual Especialidade especialidade { get; private set; }
 
     }
 }
