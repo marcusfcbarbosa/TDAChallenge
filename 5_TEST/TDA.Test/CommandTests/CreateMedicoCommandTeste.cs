@@ -26,6 +26,5 @@ namespace TDA.Test.CommandTests
         {
             Assert.AreEqual(_validCommand.Valid, true);
         }
-
     }
 }
