@@ -1,5 +1,5 @@
 # TDAChallenge
-navague para path 
+navegue para path 
 
 TDAChallenge\1_API\TDA.WebApi> 
 
