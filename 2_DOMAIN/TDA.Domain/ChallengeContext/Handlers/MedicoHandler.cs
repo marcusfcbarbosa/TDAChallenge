@@ -39,6 +39,7 @@ namespace TDA.Domain.ChallengeContext.Handlers
             {
                 return new CommandResult(false, "Erros", command.Notifications);
             }
+            
             List<Especialidade> listEsp = new List<Especialidade>();
             for (int i = 0; i < command.especialidades.Count(); i++)
             {

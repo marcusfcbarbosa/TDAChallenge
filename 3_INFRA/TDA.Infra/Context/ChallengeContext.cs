@@ -8,7 +8,6 @@ namespace TDA.Infra.Context
 {
     public class ChallengeContext : DbContext
     {
-
         public ChallengeContext()
         {
             this.ChangeTracker.LazyLoadingEnabled = false;

@@ -13,15 +13,11 @@ namespace TDA.Test.HandlerTests
         private readonly CriaMedicoCommand _validCommand = new CriaMedicoCommand("marcus", "21015511872", "232434223");
         private readonly MedicoHandler _handler = new MedicoHandler(new FakeMedicoRepository(), new FakeEspecialidadeRepository(), new FakeUserRepository(), new FakeMedicoEspecialidadeRespository());//Fake Repository
         //RED GREEN REFACTOR
+        public CreateMedicoHandlerTest(){}
 
-        public CreateMedicoHandlerTest()
-        {
-
-        }
         [TestMethod]
         public void InputInvalidoDeveRetornarCommandResultFalse()
         {
-            
             CommandResult result = (CommandResult)_handler.Handle(_invalidCommand);
             Assert.AreEqual(result.Success, false);
         }
