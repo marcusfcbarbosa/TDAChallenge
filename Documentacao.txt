@@ -1,0 +1,3 @@
+dotnet add package MediatR
+
+dotnet add package MediatR.Extensions.Microsoft.DependencyInjection

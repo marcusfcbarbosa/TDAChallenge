@@ -1,8 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using MediatR;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -69,6 +71,11 @@ namespace TDA.WebApi
             #region"Handlers"
             services.AddScoped<MedicoHandler, MedicoHandler>();
             #endregion
+            
+            #region"Mediator"
+            services.AddMediatR(Assembly.GetExecutingAssembly());
+            #endregion
+
 
             #region"Repositórios"
             services.AddScoped<IUserRepository, UserRepository>();

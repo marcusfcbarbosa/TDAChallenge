@@ -52,6 +52,14 @@
               "target": "Package",
               "version": "[2.0.4, )"
             },
+            "MediatR": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
             "Microsoft.AspNetCore.Authentication": {
               "target": "Package",
               "version": "[2.2.0, )"
@@ -153,6 +161,10 @@
             "FluentValidator": {
               "target": "Package",
               "version": "[2.0.4, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[8.1.0, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",

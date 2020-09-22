@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "DXjI5APf2igc6rK8BxS8zy0Iy5eUtBAK4AEwXSggUi+oQjNLveJwl1suXOJ0Lrl05YFFgPjTG+jcWgAp1fapGw==",
+  "dgSpecHash": "jyL3391EXA6NoaTxlvzqUuYxoXn+atw/Dl54VdqAs62hPFu9cZ24NzhmxSoklB3louZM1NdgOxC6+b0ETdmWUA==",
   "success": true,
   "projectFilePath": "C:\\Users\\dev\\TDAChallenge\\2_DOMAIN\\TDA.Domain\\TDA.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Marcus\\.nuget\\packages\\fluentvalidator\\2.0.4\\fluentvalidator.2.0.4.nupkg.sha512",
+    "C:\\Users\\Marcus\\.nuget\\packages\\mediatr\\8.1.0\\mediatr.8.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],

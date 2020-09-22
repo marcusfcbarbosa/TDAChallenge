@@ -88,3 +88,5 @@ C:\Users\dev\TDAChallenge\1_API\TDA.WebApi\bin\Debug\netcoreapp3.0\Microsoft.Ide
 C:\Users\dev\TDAChallenge\1_API\TDA.WebApi\bin\Debug\netcoreapp3.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\dev\TDAChallenge\1_API\TDA.WebApi\obj\Debug\netcoreapp3.0\TDA.WebApi.csproj.CoreCompileInputs.cache
 C:\Users\dev\TDAChallenge\1_API\TDA.WebApi\obj\Debug\netcoreapp3.0\TDA.WebApi.genruntimeconfig.cache
+C:\Users\dev\TDAChallenge\1_API\TDA.WebApi\bin\Debug\netcoreapp3.0\MediatR.dll
+C:\Users\dev\TDAChallenge\1_API\TDA.WebApi\bin\Debug\netcoreapp3.0\MediatR.Extensions.Microsoft.DependencyInjection.dll

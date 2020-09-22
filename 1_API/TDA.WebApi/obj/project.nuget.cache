@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "nc1KCtBTCwDou15my4Ri4i9wIoTUlHWU1OHZo6a2hSDQogq1NxDlTycsI/m29AipAjIgzzxhidhCspUcN3WeGA==",
+  "dgSpecHash": "ueb0EivM1ilNB6X8g8whq8jKDGgQwkDkBmnQxkGgn5NxR2ZZjnGGoq4p9qIgwe96iWWY1MmTERoTuoCGA0yeeg==",
   "success": true,
   "projectFilePath": "C:\\Users\\dev\\TDAChallenge\\1_API\\TDA.WebApi\\TDA.WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Marcus\\.nuget\\packages\\fluentvalidator\\2.0.4\\fluentvalidator.2.0.4.nupkg.sha512",
+    "C:\\Users\\Marcus\\.nuget\\packages\\mediatr\\8.1.0\\mediatr.8.1.0.nupkg.sha512",
+    "C:\\Users\\Marcus\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\8.1.0\\mediatr.extensions.microsoft.dependencyinjection.8.1.0.nupkg.sha512",
     "C:\\Users\\Marcus\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\Marcus\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Marcus\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
